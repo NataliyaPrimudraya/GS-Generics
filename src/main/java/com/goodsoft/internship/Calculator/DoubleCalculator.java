@@ -9,27 +9,28 @@ public class DoubleCalculator implements Calculator<Double> {
 
     @Override
     public Double add(Double a, Double b) {
-        return a+b;
+        return a + b;
     }
 
     @Override
     public Double substract(Double a, Double b) {
-        return a-b;
+        return a - b;
     }
 
     @Override
     public Double multiply(Double a, Double b) {
-        return a*b;
+        return a * b;
     }
 
     /**
-     *{inheritDoc}
+     * {inheritDoc}
+     *
      * @throws ArithmeticException if the divisor in null
      */
     @Override
     public Double divide(Double a, Double b) {
-        if (b==0)
+        if (b == 0)
             throw new ArithmeticException("Division by zero");
-        return a/b;
+        return a / b;
     }
 }

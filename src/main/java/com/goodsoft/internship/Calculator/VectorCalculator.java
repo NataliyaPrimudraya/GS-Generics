@@ -28,6 +28,7 @@ public class VectorCalculator implements Calculator<Vector2D> {
     /**
      * {@return a vector obtained by multiplying
      * the first vector by the modulus of the second}
+     *
      * @param v1 the first vector
      * @param v2 the second vector
      */
@@ -40,10 +41,11 @@ public class VectorCalculator implements Calculator<Vector2D> {
     /**
      * {@return returns a vector obtained by dividing
      * the first vector by the modulus of the second}
+     *
      * @param v1 the first vector
      * @param v2 the second vector
      * @throws IllegalArgumentException if modulus
-     *         of the second vector in null
+     *                                  of the second vector in null
      */
     @Override
     public Vector2D divide(Vector2D v1, Vector2D v2) {

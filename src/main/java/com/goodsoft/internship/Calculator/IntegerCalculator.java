@@ -9,27 +9,28 @@ public class IntegerCalculator implements Calculator<Integer> {
 
     @Override
     public Integer add(Integer a, Integer b) {
-        return a+b;
+        return a + b;
     }
 
     @Override
     public Integer substract(Integer a, Integer b) {
-        return a-b;
+        return a - b;
     }
 
     @Override
     public Integer multiply(Integer a, Integer b) {
-        return a*b;
+        return a * b;
     }
 
     /**
-     *{inheritDoc}
+     * {inheritDoc}
+     *
      * @throws ArithmeticException if the divisor in null
      */
     @Override
     public Integer divide(Integer a, Integer b) {
-        if (b==0)
+        if (b == 0)
             throw new ArithmeticException("Division by zero");
-        return a/b;
+        return a / b;
     }
 }

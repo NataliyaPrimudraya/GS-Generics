@@ -13,10 +13,11 @@ public class Vector2D {
 
     /**
      * Constructs a vector with coordinates (x, y)
+     *
      * @param x x-coordinate
      * @param y y-coordinate
      */
-    public Vector2D(double x, double y){
+    public Vector2D(double x, double y) {
         this.x = x;
         this.y = y;
     }
@@ -29,17 +30,17 @@ public class Vector2D {
     }
 
     /**
-     * {@return y-coordinate}
-     */
-    public double getY() {
-        return y;
-    }
-
-    /**
      * Sets the x-coordinate value
      */
     public void setX(double x) {
         this.x = x;
+    }
+
+    /**
+     * {@return y-coordinate}
+     */
+    public double getY() {
+        return y;
     }
 
     /**
@@ -53,8 +54,8 @@ public class Vector2D {
      * {@return the coordinates of a vector in string format (x, y)}
      */
     @Override
-    public String toString(){
-        return "("+x+", "+y+")";
+    public String toString() {
+        return "(" + x + ", " + y + ")";
     }
 
 }

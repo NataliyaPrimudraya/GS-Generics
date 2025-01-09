@@ -15,19 +15,20 @@ public class StringCalculator implements Calculator<String> {
      */
     @Override
     public String add(String str1, String str2) {
-        return str1+str2;
+        return str1 + str2;
     }
 
     /**
      * {@return the original string without
      * the first occurrence of the substring}
+     *
      * @param str1 the original string
      * @param str2 the substring
      */
     @Override
     public String substract(String str1, String str2) {
-        if(str1.contains(str2))
-            return str1.replaceFirst(str2,"");
+        if (str1.contains(str2))
+            return str1.replaceFirst(str2, "");
         return str1;
     }
 
@@ -42,7 +43,7 @@ public class StringCalculator implements Calculator<String> {
     @Override
     public String multiply(String str1, String str2) {
         StringBuilder str = new StringBuilder();
-        for(int i = 0; i<str2.length(); i++)
+        for (int i = 0; i < str2.length(); i++)
             str.append(str);
         return str.toString();
     }
